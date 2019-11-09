@@ -1,3 +1,26 @@
+// loader
+const DOM = document.body;
+window.addEventListener("load", function() {
+  // Animate loader off screen
+  var loader = document.querySelector(".loader");
+  loader.setAttribute("data-aos", "fade-up");
+  // DOM.removeChild(document.querySelector(".loader"));
+});
+
+// Header
+navbar = document.querySelector(".navbar");
+nav_bound = navbar.getBoundingClientRect();
+window.addEventListener("scroll", e => {
+  last_known_scroll_position = window.scrollY;
+  if (last_known_scroll_position > nav_bound.height) {
+    navbar.classList.add("fixed-nav");
+  } else {
+    navbar.classList.remove("fixed-nav");
+  }
+});
+// end header
+
+// particles
 var partJson = {
   particles: {
     number: {
@@ -8,7 +31,7 @@ var partJson = {
       }
     },
     color: {
-      value: "#ffffff"
+      value: "random"
     },
     shape: {
       type: "polygon",
@@ -67,7 +90,7 @@ var partJson = {
     events: {
       onhover: {
         enable: true,
-        mode: "grab"
+        mode: "repulse"
       },
       onclick: {
         enable: true,
@@ -106,7 +129,11 @@ var partJson = {
 var jsonUri = "data:text/plain;base64," + window.btoa(JSON.stringify(partJson));
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-
 particlesJS.load("particles-js", jsonUri, function() {
   console.log("callback - particles.js config loaded");
 });
+
+// end particles
+
+// Animare on scroll
+AOS.init();

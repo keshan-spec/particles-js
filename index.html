@@ -6,24 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Particle JS</title>
   </head>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+  />
   <link rel="stylesheet" href="styles/main.css" />
   <body>
+    <div class="loader"></div>
+    <!-- header -->
     <div class="header">
+      <div class="navbar">
+        <div class="logo">
+          Keshan
+        </div>
+        <div class="navlinks">
+          <a href="">Home</a>
+          <a href="">Portfolio</a>
+        </div>
+      </div>
       <div id="particles-js"></div>
       <h2>Particle JS</h2>
-      <span class="get_started"><p>Get started</p></span>
+      <span class="get_started"
+        ><p>Get started <i class="fas fa-angle-double-right"></i></p
+      ></span>
     </div>
+    <!-- end header -->
+
+    <!-- main section -->
     <div class="section-1">
-      <h1>First section</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
-        repudiandae quis praesentium, unde dolore est assumenda asperiores iste
-        aliquam veniam numquam? Libero perferendis iure unde labore, mollitia
-        quos quo esse.
-      </p>
+      <div data-aos="fade-up" data-aos-duration="1500">
+        <h1>First section</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+          repudiandae quis praesentium, unde dolore est assumenda asperiores
+          iste aliquam veniam numquam? Libero perferendis iure unde labore,
+          mollitia quos quo esse.
+        </p>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="2000" class="grid">
+        <div class="img-box">
+          <img src="https://unsplash.it/1500" alt="" />
+        </div>
+        <div class="img-box">
+          <img src="https://unsplash.it/500" alt="" />
+        </div>
+        <div class="img-box">
+          <img src="https://unsplash.it/500" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- end main section -->
+
+    <!-- footer -->
+    <div class="footer">
+      Footer
     </div>
 
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

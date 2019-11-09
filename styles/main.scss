@@ -12,14 +12,91 @@ body {
   position: relative;
   font-family: "Poppins", sans-serif;
 }
+*::selection {
+  background-color: yellow;
+}
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_2.gif")
+    center no-repeat #fff;
+  transition: height 300ms ease-out;
+}
 
 // header
 .header {
-  width: 100vw;
+  max-width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
   padding: 0;
   margin: 0;
+
+  .fixed-nav {
+    background-color: black;
+    position: fixed !important;
+    top: 0 !important;
+    -webkit-box-shadow: 0px 22px 54px -3px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 0px 22px 54px -3px rgba(0, 0, 0, 0.64);
+    box-shadow: 0px 22px 54px -3px rgba(0, 0, 0, 0.64);
+    transition: 300ms;
+  }
+
+  .navbar {
+    transition: 300ms;
+
+    z-index: 99;
+    position: absolute;
+    top: 10px;
+    // background: yellow;
+    max-width: 100vw;
+    width: 100%;
+    max-height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .logo {
+      padding: 20px;
+      width: 100%;
+      color: white;
+      font-size: 1.5em;
+      letter-spacing: 2px;
+      font-weight: bold;
+      margin-left: 25px;
+    }
+    .navlinks {
+      padding: 15px;
+
+      display: flex;
+      width: 80%;
+      justify-content: flex-end;
+      align-items: center;
+      a {
+        font-size: 1rem;
+        padding: 8px;
+        text-decoration: none;
+        margin-left: 20px;
+        transition: 300ms;
+        color: white;
+        // background-color: yellow;
+        // border-radius: 6px;
+        // transition: 300ms;
+        // border: 1px transparent solid;
+        // letter-spacing: 2px;
+        // &:hover {
+        //   background-color: black;
+        //   border: 1px white solid;
+        //   color: white;
+        // }
+      }
+    }
+  }
+
   h2 {
     position: absolute;
     top: 50%;
@@ -53,7 +130,7 @@ body {
     transition: 300ms;
     border: 1px transparent solid;
     &:hover {
-      background-color: transparent;
+      background-color: black;
       border: 1px white solid;
       color: white;
     }
@@ -78,9 +155,57 @@ body {
 .section-1 {
   padding: 50px;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   max-width: 100%;
   background: linear-gradient(to bottom, #000 10%, rgba(0, 0, 0, 0.87));
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    margin: 10px;
+    padding: 10px;
+    font-size: 4em;
+    letter-spacing: 2px;
+    color: white;
+  }
+  p {
+    color: white;
+  }
+
+  .grid {
+    margin: 55px 0;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    width: 80%;
+    .img-box {
+      -webkit-box-shadow: -10px 9px 21px -2px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -10px 9px 21px -2px rgba(0, 0, 0, 0.75);
+      box-shadow: -10px 9px 21px -2px rgba(0, 0, 0, 0.75);
+      justify-self: center;
+      max-width: 500px;
+      margin: 25px;
+      background-size: contain;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+// end section 1
+
+// section 2
+.section-2 {
+  padding: 50px;
+  margin: 0;
+  height: 100vh;
+  max-width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.87) 50%,
+    rgba(0, 0, 0, 0.87)
+  );
   position: relative;
   h1 {
     margin: 10px;
@@ -93,4 +218,22 @@ body {
     color: white;
   }
 }
-// end section 1
+
+// footer
+.footer {
+  position: relative;
+  // top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
