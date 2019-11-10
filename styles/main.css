@@ -331,6 +331,195 @@ body {
   width: 100%;
 }
 
+.section-1 .prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 100vh;
+  padding: 20px;
+}
+
+.section-1 .prices .catagory {
+  width: 65%;
+  max-height: 450px;
+  padding: 25px;
+  height: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: 1px white solid;
+  color: white;
+  overflow: hidden;
+  border-radius: 16px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.section-1 .prices .catagory #type {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.section-1 .prices .catagory #ft {
+  margin-left: -25px;
+  list-style-type: none;
+}
+
+.section-1 .prices .catagory #ft li {
+  margin: 5px;
+  font-weight: bold;
+}
+
+.section-1 .prices .catagory #ft .fa-check {
+  color: #0ebb0e;
+}
+
+.section-1 .prices .catagory #ft .fa-times,
+.section-1 .prices .catagory #ft .disabled {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.section-1 .prices .catagory button {
+  cursor: pointer;
+}
+
+.section-1 .prices .catagory #price {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: white;
+}
+
+.section-1 .prices .catagory #price p {
+  color: black;
+}
+
+.section-1 .prices .catagory .buy-btn {
+  outline: none;
+  width: 60%;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: black;
+  background-color: #ecec27;
+  border-radius: 16px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  border: 1px transparent solid;
+}
+
+.section-1 .prices .catagory .buy-btn:hover {
+  background-color: transparent;
+  border: 1px white solid;
+  color: white;
+}
+
+.section-1 .prices .special {
+  z-index: 2;
+  -webkit-box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border: none;
+  background: #ffe000;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e9fa4e), to(#ffe000));
+  background: linear-gradient(to top, #e9fa4e, #ffe000);
+  color: black;
+}
+
+.section-1 .prices .special #mb {
+  -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.55);
+          box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.55);
+  position: absolute;
+  top: -7px;
+  right: -4px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  color: black;
+}
+
+.section-1 .prices .special #mb i {
+  padding: 0;
+  margin: 0;
+  font-size: 0.4rem;
+}
+
+.section-1 .prices .special #price {
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.55);
+          box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.55);
+  text-align: center;
+  color: black !important;
+}
+
+.section-1 .prices .special .buy-btn {
+  width: 60%;
+  padding: 10px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 16px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  border: 1px transparent solid;
+}
+
+.section-1 .prices .special .buy-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border: none;
+  background-color: black;
+}
+
 .section-2 {
   padding: 50px;
   margin: 0;
@@ -354,6 +543,8 @@ body {
 }
 
 .footer {
+  -webkit-box-shadow: 0px -21px 35px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -21px 35px 0px rgba(0, 0, 0, 0.75);
   position: relative;
   left: 0;
   right: 0;
