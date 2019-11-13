@@ -22,8 +22,10 @@
           Keshan
         </div>
         <div class="navlinks">
-          <a href="">Home</a>
-          <a href="">Portfolio</a>
+          <a href="index.html#projects">Portfolio</a>
+          <a href="index.html#prices">Pricings</a>
+          <a href="index.html#contact">Contact us</a>
+          <a href="index.html#hire">Hire me</a>
         </div>
       </div>
       <div id="particles-js"></div>
@@ -36,7 +38,7 @@
 
     <!-- main section -->
     <div class="section-1">
-      <div data-aos="fade-up" data-aos-duration="1500">
+      <div data-aos="fade-up" data-aos-duration="1500" id="info">
         <h1>First section</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
@@ -45,27 +47,35 @@
           mollitia quos quo esse.
         </p>
       </div>
-
+      <!-- services -->
       <div class="services">services</div>
+      <!-- end services -->
+      <!-- projects -->
       <div
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        class="grid"
+        class="projects"
         id="projects"
+        data-aos="fade-up"
+        data-aos-duration="1500"
       >
-        <div class="img-box">
-          <img src="https://unsplash.it/500" alt="" />
-        </div>
-        <div class="img-box">
-          <img src="https://unsplash.it/500" alt="" />
-        </div>
-        <div class="img-box">
-          <img src="https://unsplash.it/500" alt="" />
+        <h2>Our projects</h2>
+        <div class="grid">
+          <div class="img-box" data-aos="fade-up" data-aos-duration="2000">
+            <img src="https://unsplash.it/500" alt="" />
+          </div>
+          <div class="img-box" data-aos="fade-up" data-aos-duration="2000">
+            <img src="https://unsplash.it/500" alt="" />
+          </div>
+          <div class="img-box" data-aos="fade-up" data-aos-duration="2000">
+            <img src="https://unsplash.it/500" alt="" />
+          </div>
+          <div class="img-box" data-aos="fade-up" data-aos-duration="2000">
+            <img src="https://unsplash.it/500" alt="" />
+          </div>
         </div>
       </div>
-
+      <!-- end projects -->
       <!-- price card -->
-      <div class="prices">
+      <div class="prices" id="prices">
         <div class="catagory">
           <p data-aos="fade-up" data-aos-duration="1500" id="type">Basic</p>
           <span data-aos="fade-up" data-aos-duration="1500" id="price">
@@ -103,9 +113,7 @@
             <li><i class="fas fa-check"></i> 7 days free hosting</li>
             <li><i class="fas fa-check"></i> 3 pages</li>
             <li><i class="fas fa-check"></i> More customization</li>
-            <li class="disabled">
-              <i class="fas fa-check"></i> Unlimited pages
-            </li>
+            <li><i class="fas fa-check"></i> Unlimited pages</li>
             <li class="disabled">
               <i class="fas fa-times"></i> SEO and content management
             </li>
@@ -139,7 +147,7 @@
       <!-- end price card -->
 
       <!-- contact section -->
-      <div class="contact-us">
+      <div class="contact-us" id="contact">
         <form data-aos="fade-up" data-aos-duration="2000" class="form">
           <h2>Contact us</h2>
           <input
@@ -189,21 +197,34 @@
 
     <!-- footer -->
     <div class="footer">
-      <!-- <div class="f-grid">
+      <div class="f-grid">
         <div class="social">
-          <span>Follow us</span>
           <span>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-facebook-f"></i></a>
+            Instagram<a href=""> <i class="fab fa-instagram"></i></a>
           </span>
+          <span
+            >Facebook<a href=""> <i class="fab fa-facebook-f"></i></a
+          ></span>
+
+          <span><i class="fas fa-mail"></i> keshanth63@gmail.com</span>
+          <span><i class="fas fa-phone-alt"></i> +94 00000000</span>
+          <span id="address"
+            ><i class="fas fa-map-marker-alt"></i> Lorem ipsumblanditiis cumque
+            doloremque molestiae nulla laudantium?</span
+          >
+        </div>
+        <div class="hire">
+          <a href="#" id="cta">Hire me</a>
+          <a href="#">Get CV</a>
         </div>
         <div id="goto-top">
           <a href="index.html#top">
             <p><i class="fas fa-arrow-up"></i></p>
           </a>
         </div>
-      </div> -->
+      </div>
       <div class="designer">
+        <hr />
         <a target="_blank" href="https://github.com/keshan-spec"
           >Designed by keshan-spec <i class="fab fa-github"></i
         ></a>
