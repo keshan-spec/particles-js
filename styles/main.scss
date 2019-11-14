@@ -294,7 +294,7 @@ body {
     // grid-template-columns: 3fr 3fr 3fr;
     width: 80%;
     justify-content: center;
-    max-height: 100vh;
+    max-height: 120vh;
     padding: 20px;
     .catagory {
       width: 65%;
@@ -437,32 +437,115 @@ body {
     }
   }
   // end price card
+
+  .services {
+    margin: 50px 0;
+    height: 80vh;
+    max-width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+
+    .bar-graph {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .graph {
+        width: 90%;
+        height: 100%;
+        padding: 10px;
+        .skills {
+          position: relative;
+          padding: 10px;
+
+          h3 {
+            margin: 0;
+            padding: 0;
+            float: left;
+            color: white;
+          }
+          .perc {
+            float: right;
+            color: white;
+          }
+
+          .bar {
+            position: relative;
+            width: 100%;
+            height: 2px;
+            margin: 15px 0 10px;
+            .progress {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 80%;
+              height: 100%;
+              background: linear-gradient(to right, rgb(238, 238, 201), yellow);
+
+              &:before {
+                content: "";
+                position: absolute;
+                top: -5px;
+                right: 0;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .carousel {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      overflow: hidden;
+      height: 100%;
+      // carousel
+      .regular {
+        padding: 0;
+        margin-top: 205px;
+        max-width: 90%;
+        height: 60%;
+        overflow: hidden;
+
+        img {
+          width: 120px;
+          opacity: 0.2;
+        }
+      }
+      .slick-track{
+        padding:25px;
+      }
+      .slick-center img {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+
+      .slick-dots {
+        bottom: 0;
+        li {
+          button {
+            &::before {
+              height: 12px;
+              width: 12px;
+              content: "";
+              border-radius: 50%;
+              background-color: white;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 // end section 1
-
-// section 2
-.section-2 {
-  padding: 50px;
-  margin: 0;
-  height: 100vh;
-  max-width: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.87) 50%,
-    rgba(0, 0, 0, 0.87)
-  );
-  position: relative;
-  h1 {
-    margin: 10px;
-    padding: 10px;
-    font-size: 4em;
-    letter-spacing: 2px;
-    color: white;
-  }
-  p {
-    color: white;
-  }
-}
 
 // footer
 .footer {
@@ -482,7 +565,6 @@ body {
   align-items: center;
 
   hr {
-    margin: 10px;
     padding: 0.5px;
     background-color: #fff;
     width: 90%;
@@ -508,11 +590,15 @@ body {
       align-items: flex-start;
       width: 100%;
       padding: 25px;
+      text-align: left;
       &:first-child {
         margin-top: 25px;
       }
       span {
         margin: 5px;
+      }
+      i {
+        margin-right: 5px;
       }
     }
     #goto-top {

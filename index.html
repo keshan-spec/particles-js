@@ -6,15 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Particle JS</title>
   </head>
+  <!-- stylesheets -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
   />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+  />
+  <!-- custom css -->
   <link rel="stylesheet" href="styles/main.css" />
   <body>
     <!-- page loader -->
-    <div class="loader"></div>
+    <!-- <div class="loader"></div> -->
     <!-- header -->
     <div id="top" class="header">
       <div class="navbar">
@@ -48,8 +58,86 @@
         </p>
       </div>
       <!-- services -->
-      <div class="services">services</div>
+      <div class="services">
+        <div class="bar-graph" data-aos="fade-up" data-aos-duration="1500">
+          <div class="graph">
+            <h1>Skills</h1>
+            <div class="skills">
+              <div class="skill-label">
+                <h3>Html</h3>
+                <span class="perc">87%</span>
+                <div style="clear:both"></div>
+              </div>
+              <div class="bar">
+                <div class="progress" style="width:87% ;"></div>
+              </div>
+            </div>
+
+            <div class="skills">
+              <div class="skill-label">
+                <h3>CSS</h3>
+                <span class="perc">70%</span>
+                <div style="clear:both"></div>
+              </div>
+              <div class="bar">
+                <div class="progress" style="width:70% ;"></div>
+              </div>
+            </div>
+
+            <div class="skills">
+              <div class="skill-label">
+                <h3>Sass</h3>
+                <span class="perc">80%</span>
+                <div style="clear:both"></div>
+              </div>
+              <div class="bar">
+                <div class="progress" style="width:80% ;"></div>
+              </div>
+            </div>
+
+            <div class="skills">
+              <div class="skill-label">
+                <h3>JavaScript</h3>
+                <span class="perc">90%</span>
+                <div style="clear:both"></div>
+              </div>
+              <div class="bar">
+                <div class="progress" style="width:90% ;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel" data-aos="fade-up" data-aos-duration="1500">
+          <div class="regular">
+            <div>
+              <img src="assets/languages/angular.png" />
+            </div>
+            <div>
+              <img src="assets/languages/css.png" />
+            </div>
+            <div>
+              <img src="assets/languages/html.png" />
+            </div>
+            <div>
+              <img src="assets/languages/javascript.png" />
+            </div>
+            <div>
+              <img src="assets/languages/laravel.png" />
+            </div>
+            <div>
+              <img src="assets/languages/php.png" />
+            </div>
+            <div>
+              <img src="assets/languages/react.png" />
+            </div>
+            <div>
+              <img src="assets/languages/sass.png" />
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- end services -->
+
       <!-- projects -->
       <div
         class="projects"
@@ -60,16 +148,16 @@
         <h2>Our projects</h2>
         <div class="grid">
           <div class="img-box" data-aos="fade-up" data-aos-duration="2000">
-            <img src="https://unsplash.it/500" alt="" />
+            <img src="assets/projects/p.jpg" alt="" />
           </div>
           <div class="img-box" data-aos="fade-up" data-aos-duration="2000">
-            <img src="https://unsplash.it/500" alt="" />
+            <img src="assets/projects/p.jpg" alt="" />
           </div>
           <div class="img-box" data-aos="fade-up" data-aos-duration="2000">
-            <img src="https://unsplash.it/500" alt="" />
+            <img src="assets/projects/p.jpg" alt="" />
           </div>
           <div class="img-box" data-aos="fade-up" data-aos-duration="2000">
-            <img src="https://unsplash.it/500" alt="" />
+            <img src="assets/projects/p.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -200,13 +288,13 @@
       <div class="f-grid">
         <div class="social">
           <span>
-            Instagram<a href=""> <i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-instagram"></i> </a> Instagram
           </span>
           <span
-            >Facebook<a href=""> <i class="fab fa-facebook-f"></i></a
-          ></span>
+            ><a href=""><i class="fab fa-facebook-f"> </i></a> Facebook</span
+          >
 
-          <span><i class="fas fa-mail"></i> keshanth63@gmail.com</span>
+          <span><i class="fas fa-at"></i> keshanth64@gmail.com</span>
           <span><i class="fas fa-phone-alt"></i> +94 00000000</span>
           <span id="address"
             ><i class="fas fa-map-marker-alt"></i> Lorem ipsumblanditiis cumque
@@ -230,10 +318,14 @@
         ></a>
       </div>
     </div>
-
+    <!-- end footer -->
+    
     <!-- JavaScript -->
     <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
     <script defer src="js/particles.js"></script>
     <script defer src="js/app.js"></script>
+    <script type="module" src="js/animations.js"></script>
   </body>
 </html>

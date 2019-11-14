@@ -135,5 +135,18 @@ particlesJS.load("particles-js", jsonUri, function() {
 
 // end particles
 
+// carousel slink js
+$(document).ready(function() {
+  $(".regular").slick({
+    dots: true,
+    infinite: true,
+    centerMode: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    autoplay: true
+  });
+});
+// end carousel
+
 // Animare on scroll
 AOS.init();
