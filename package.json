@@ -1,0 +1,32 @@
+{
+  "name": "particle-js",
+  "version": "1.0.0",
+  "description": "landing page website",
+  "main": "app.js",
+  "dependencies": {
+    "animejs": "^3.1.0",
+    "aos": "^3.0.0-beta.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keshan-spec/particles-js.git"
+  },
+  "keywords": [
+    "javascript",
+    "website",
+    "landing",
+    "page",
+    "particle",
+    "js"
+  ],
+  "author": "keshan-spec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keshan-spec/particles-js/issues"
+  },
+  "homepage": "https://github.com/keshan-spec/particles-js#readme"
+}

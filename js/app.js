@@ -147,6 +147,3 @@ $(document).ready(function() {
   });
 });
 // end carousel
-
-// Animare on scroll
-AOS.init();
