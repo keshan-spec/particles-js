@@ -1,15 +1,16 @@
-import anime from "../node_modules/animejs/lib/anime.es.js";
-
-// Animare on scroll
-AOS.init();
+import anime from "./anime.es.js";
 
 // anime js
 document.addEventListener("DOMContentLoaded", () => {
-  const progress = document.querySelectorAll(".progress");
   const services = document.querySelector(".services").getBoundingClientRect();
 
   window.onscroll = () => {
-    if (window.scrollY >= services.top) {
+    // console.log(services.height);
+    console.log(Math.round(window.scrollY), services.top);
+
+    let offset = services.top + 100;
+    console.log(offset);
+    if (Math.round(window.scrollY) >= offset) {
       anime({
         targets: ".progress",
         width: [
@@ -25,3 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 });
+
+// Animare on scroll
+AOS.init();
