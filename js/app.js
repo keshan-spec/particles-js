@@ -1,6 +1,6 @@
 // loader
 const DOM = document.body;
-window.addEventListener("load", function() {
+window.addEventListener("load", () => {
   // Animate loader off screen
   var loader = document.querySelector(".loader");
   loader.setAttribute("data-aos", "fade-up");
@@ -8,14 +8,14 @@ window.addEventListener("load", function() {
 });
 
 // Header
-navbar = document.querySelector(".navbar");
+navbar = document.querySelector(".nav");
 nav_bound = navbar.getBoundingClientRect();
 window.addEventListener("scroll", e => {
   last_known_scroll_position = window.scrollY;
   if (last_known_scroll_position > nav_bound.height) {
-    navbar.classList.add("fixed-nav");
+    navbar.classList.add("shadow");
   } else {
-    navbar.classList.remove("fixed-nav");
+    navbar.classList.remove("shadow");
   }
 });
 // end header

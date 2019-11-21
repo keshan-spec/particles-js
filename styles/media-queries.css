@@ -1,0 +1,77 @@
+@media screen and (max-width: 1168px) {
+  #info {
+    margin: 15px;
+  }
+  .get_started {
+    margin-top: 15px;
+  }
+  .services {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 180vh !important;
+  }
+  .services .bar-graph,
+  .services .carousel {
+    height: 80%;
+    width: 100%;
+    margin: 0;
+  }
+  .contact-us {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 200vh !important;
+  }
+  .contact-us .form,
+  .contact-us .location {
+    width: 100% !important;
+  }
+  .contact-us .form input,
+  .contact-us .form textarea {
+    width: 100% !important;
+  }
+  .projects .grid {
+    -ms-grid-columns: 2fr 2fr !important;
+        grid-template-columns: 2fr 2fr !important;
+  }
+  .prices {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: 300vh !important;
+  }
+  .prices .catagory {
+    margin: 20px 0px;
+    height: 80%;
+    width: 60% !important;
+  }
+  .prices .special {
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
+  }
+}
+
+/* 48em = 768px */
+/*# sourceMappingURL=media-queries.css.map */

@@ -1,4 +1,7 @@
-import anime from "./anime.es.js";
+import anime from "../assets/modules/anime.es.js";
+
+// Animare on scroll
+AOS.init();
 
 // anime js
 document.addEventListener("DOMContentLoaded", () => {
@@ -27,5 +30,4 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 });
 
-// Animare on scroll
-AOS.init();
+
