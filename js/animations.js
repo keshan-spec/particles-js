@@ -1,4 +1,3 @@
-import anime from "../assets/modules/anime.es.js";
 
 // Animare on scroll
 AOS.init();
